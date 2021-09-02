@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EA874E7ED97CF4AA8548CFC /* Pods_Gigimovies_GigimoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B266A06A23F1BD9B23263BC8 /* Pods_Gigimovies_GigimoviesUITests.framework */; };
+		AF52A7C6C116149B4A889D0D /* Pods_GigimoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F24CBDB1EEB98323DB56BB /* Pods_GigimoviesTests.framework */; };
+		B9F641E522A41F567F5B8CAA /* Pods_Gigimovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E2C3D665545AA838C1DA62 /* Pods_Gigimovies.framework */; };
 		C5CA829226DE7F1E00500CCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA829126DE7F1E00500CCB /* AppDelegate.swift */; };
 		C5CA829426DE7F1E00500CCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA829326DE7F1E00500CCB /* SceneDelegate.swift */; };
 		C5CA829626DE7F1E00500CCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA829526DE7F1E00500CCB /* ViewController.swift */; };
@@ -35,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CF39C5F9B5DE5F49F1A1EDE /* Pods-Gigimovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigimovies.debug.xcconfig"; path = "Target Support Files/Pods-Gigimovies/Pods-Gigimovies.debug.xcconfig"; sourceTree = "<group>"; };
+		3FFB5AF048D3308CD1AAA3FD /* Pods-GigimoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigimoviesTests.debug.xcconfig"; path = "Target Support Files/Pods-GigimoviesTests/Pods-GigimoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A0AAA41C7D3CA894AF5D86E /* Pods-Gigimovies-GigimoviesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigimovies-GigimoviesUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gigimovies-GigimoviesUITests/Pods-Gigimovies-GigimoviesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A7A3067EACFA320791EB347 /* Pods-Gigimovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigimovies.release.xcconfig"; path = "Target Support Files/Pods-Gigimovies/Pods-Gigimovies.release.xcconfig"; sourceTree = "<group>"; };
+		72E2C3D665545AA838C1DA62 /* Pods_Gigimovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigimovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F24CBDB1EEB98323DB56BB /* Pods_GigimoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GigimoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B266A06A23F1BD9B23263BC8 /* Pods_Gigimovies_GigimoviesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigimovies_GigimoviesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7DC70ACB807812D4639947 /* Pods-Gigimovies-GigimoviesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigimovies-GigimoviesUITests.release.xcconfig"; path = "Target Support Files/Pods-Gigimovies-GigimoviesUITests/Pods-Gigimovies-GigimoviesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C02621435C29908D17CC9537 /* Pods-GigimoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigimoviesTests.release.xcconfig"; path = "Target Support Files/Pods-GigimoviesTests/Pods-GigimoviesTests.release.xcconfig"; sourceTree = "<group>"; };
 		C5CA828E26DE7F1E00500CCB /* Gigimovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gigimovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CA829126DE7F1E00500CCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5CA829326DE7F1E00500CCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9F641E522A41F567F5B8CAA /* Pods_Gigimovies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF52A7C6C116149B4A889D0D /* Pods_GigimoviesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA874E7ED97CF4AA8548CFC /* Pods_Gigimovies_GigimoviesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C59ADCE614AFCFFE49A296B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72E2C3D665545AA838C1DA62 /* Pods_Gigimovies.framework */,
+				B266A06A23F1BD9B23263BC8 /* Pods_Gigimovies_GigimoviesUITests.framework */,
+				88F24CBDB1EEB98323DB56BB /* Pods_GigimoviesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C5CA828526DE7F1E00500CCB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				C5CA82A726DE7F1F00500CCB /* GigimoviesTests */,
 				C5CA82B226DE7F1F00500CCB /* GigimoviesUITests */,
 				C5CA828F26DE7F1E00500CCB /* Products */,
+				CC13F8C539EFB86947F017A2 /* Pods */,
+				2C59ADCE614AFCFFE49A296B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +130,6 @@
 				C5CA82C526DE7F6D00500CCB /* Modules */,
 				C5CA82C626DE7F7D00500CCB /* SupportingFiles */,
 				C5CA82C726DE7F8F00500CCB /* DataLayer */,
-				C5CA829126DE7F1E00500CCB /* AppDelegate.swift */,
-				C5CA829326DE7F1E00500CCB /* SceneDelegate.swift */,
-				C5CA829526DE7F1E00500CCB /* ViewController.swift */,
-				C5CA829A26DE7F1F00500CCB /* Assets.xcassets */,
-				C5CA829F26DE7F1F00500CCB /* Info.plist */,
 			);
 			path = Gigimovies;
 			sourceTree = "<group>";
@@ -142,6 +164,7 @@
 		C5CA82C526DE7F6D00500CCB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C5CA829526DE7F1E00500CCB /* ViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -149,6 +172,9 @@
 		C5CA82C626DE7F7D00500CCB /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				C5CA82C826DE83E000500CCB /* Delegates */,
+				C5CA829A26DE7F1F00500CCB /* Assets.xcassets */,
+				C5CA829F26DE7F1F00500CCB /* Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -160,6 +186,29 @@
 			path = DataLayer;
 			sourceTree = "<group>";
 		};
+		C5CA82C826DE83E000500CCB /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C5CA829126DE7F1E00500CCB /* AppDelegate.swift */,
+				C5CA829326DE7F1E00500CCB /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		CC13F8C539EFB86947F017A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CF39C5F9B5DE5F49F1A1EDE /* Pods-Gigimovies.debug.xcconfig */,
+				5A7A3067EACFA320791EB347 /* Pods-Gigimovies.release.xcconfig */,
+				5A0AAA41C7D3CA894AF5D86E /* Pods-Gigimovies-GigimoviesUITests.debug.xcconfig */,
+				BA7DC70ACB807812D4639947 /* Pods-Gigimovies-GigimoviesUITests.release.xcconfig */,
+				3FFB5AF048D3308CD1AAA3FD /* Pods-GigimoviesTests.debug.xcconfig */,
+				C02621435C29908D17CC9537 /* Pods-GigimoviesTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5CA82B826DE7F1F00500CCB /* Build configuration list for PBXNativeTarget "Gigimovies" */;
 			buildPhases = (
+				FAEFBDBBC8FF356112D7D8D8 /* [CP] Check Pods Manifest.lock */,
 				C5CA828A26DE7F1E00500CCB /* Sources */,
 				C5CA828B26DE7F1E00500CCB /* Frameworks */,
 				C5CA828C26DE7F1E00500CCB /* Resources */,
+				1A2D6D6052CC9FEDE883185F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5CA82BB26DE7F1F00500CCB /* Build configuration list for PBXNativeTarget "GigimoviesTests" */;
 			buildPhases = (
+				7A8FEF6D0DED58E80B322F4A /* [CP] Check Pods Manifest.lock */,
 				C5CA82A026DE7F1F00500CCB /* Sources */,
 				C5CA82A126DE7F1F00500CCB /* Frameworks */,
 				C5CA82A226DE7F1F00500CCB /* Resources */,
@@ -202,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5CA82BE26DE7F1F00500CCB /* Build configuration list for PBXNativeTarget "GigimoviesUITests" */;
 			buildPhases = (
+				399386705D2184BA45E61FC8 /* [CP] Check Pods Manifest.lock */,
 				C5CA82AB26DE7F1F00500CCB /* Sources */,
 				C5CA82AC26DE7F1F00500CCB /* Frameworks */,
 				C5CA82AD26DE7F1F00500CCB /* Resources */,
+				7B9EB87848022BBFE49F97BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,6 +338,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A2D6D6052CC9FEDE883185F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gigimovies/Pods-Gigimovies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gigimovies/Pods-Gigimovies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gigimovies/Pods-Gigimovies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		399386705D2184BA45E61FC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gigimovies-GigimoviesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A8FEF6D0DED58E80B322F4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GigimoviesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B9EB87848022BBFE49F97BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gigimovies-GigimoviesUITests/Pods-Gigimovies-GigimoviesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gigimovies-GigimoviesUITests/Pods-Gigimovies-GigimoviesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gigimovies-GigimoviesUITests/Pods-Gigimovies-GigimoviesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEFBDBBC8FF356112D7D8D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gigimovies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5CA828A26DE7F1E00500CCB /* Sources */ = {
@@ -465,12 +622,13 @@
 		};
 		C5CA82B926DE7F1F00500CCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF39C5F9B5DE5F49F1A1EDE /* Pods-Gigimovies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FHFAG7LFX8;
-				INFOPLIST_FILE = Gigimovies/Info.plist;
+				INFOPLIST_FILE = Gigimovies/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,12 +642,13 @@
 		};
 		C5CA82BA26DE7F1F00500CCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A7A3067EACFA320791EB347 /* Pods-Gigimovies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FHFAG7LFX8;
-				INFOPLIST_FILE = Gigimovies/Info.plist;
+				INFOPLIST_FILE = Gigimovies/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,6 +662,7 @@
 		};
 		C5CA82BC26DE7F1F00500CCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFB5AF048D3308CD1AAA3FD /* Pods-GigimoviesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -525,6 +685,7 @@
 		};
 		C5CA82BD26DE7F1F00500CCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C02621435C29908D17CC9537 /* Pods-GigimoviesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,6 +708,7 @@
 		};
 		C5CA82BF26DE7F1F00500CCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A0AAA41C7D3CA894AF5D86E /* Pods-Gigimovies-GigimoviesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +729,7 @@
 		};
 		C5CA82C026DE7F1F00500CCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA7DC70ACB807812D4639947 /* Pods-Gigimovies-GigimoviesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
