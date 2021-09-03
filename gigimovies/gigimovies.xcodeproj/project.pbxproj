@@ -10,9 +10,14 @@
 		0EA874E7ED97CF4AA8548CFC /* Pods_Gigimovies_GigimoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B266A06A23F1BD9B23263BC8 /* Pods_Gigimovies_GigimoviesUITests.framework */; };
 		AF52A7C6C116149B4A889D0D /* Pods_GigimoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F24CBDB1EEB98323DB56BB /* Pods_GigimoviesTests.framework */; };
 		B9F641E522A41F567F5B8CAA /* Pods_Gigimovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E2C3D665545AA838C1DA62 /* Pods_Gigimovies.framework */; };
+		C5068CDF26E21C84009E0A15 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5068CDE26E21C84009E0A15 /* BaseProtocol.swift */; };
+		C5068CE526E21CDD009E0A15 /* PopMoviesModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5068CE426E21CDD009E0A15 /* PopMoviesModule.swift */; };
+		C5068CEA26E21CF7009E0A15 /* PopMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5068CE926E21CF7009E0A15 /* PopMoviesViewController.swift */; };
+		C5068CEF26E21D05009E0A15 /* PopMoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5068CEE26E21D05009E0A15 /* PopMoviesPresenter.swift */; };
+		C5068CF426E21D1B009E0A15 /* PopMoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5068CF326E21D1B009E0A15 /* PopMoviesInteractor.swift */; };
+		C5068CF926E21D47009E0A15 /* PopMoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5068CF826E21D47009E0A15 /* PopMoviesRouter.swift */; };
 		C5CA829226DE7F1E00500CCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA829126DE7F1E00500CCB /* AppDelegate.swift */; };
 		C5CA829426DE7F1E00500CCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA829326DE7F1E00500CCB /* SceneDelegate.swift */; };
-		C5CA829626DE7F1E00500CCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CA829526DE7F1E00500CCB /* ViewController.swift */; };
 		C5CA829926DE7F1E00500CCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CA829726DE7F1E00500CCB /* Main.storyboard */; };
 		C5CA829B26DE7F1F00500CCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5CA829A26DE7F1F00500CCB /* Assets.xcassets */; };
 		C5CA829E26DE7F1F00500CCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5CA829C26DE7F1F00500CCB /* LaunchScreen.storyboard */; };
@@ -48,10 +53,15 @@
 		B266A06A23F1BD9B23263BC8 /* Pods_Gigimovies_GigimoviesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigimovies_GigimoviesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7DC70ACB807812D4639947 /* Pods-Gigimovies-GigimoviesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigimovies-GigimoviesUITests.release.xcconfig"; path = "Target Support Files/Pods-Gigimovies-GigimoviesUITests/Pods-Gigimovies-GigimoviesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C02621435C29908D17CC9537 /* Pods-GigimoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigimoviesTests.release.xcconfig"; path = "Target Support Files/Pods-GigimoviesTests/Pods-GigimoviesTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5068CDE26E21C84009E0A15 /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
+		C5068CE426E21CDD009E0A15 /* PopMoviesModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopMoviesModule.swift; sourceTree = "<group>"; };
+		C5068CE926E21CF7009E0A15 /* PopMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopMoviesViewController.swift; sourceTree = "<group>"; };
+		C5068CEE26E21D05009E0A15 /* PopMoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopMoviesPresenter.swift; sourceTree = "<group>"; };
+		C5068CF326E21D1B009E0A15 /* PopMoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopMoviesInteractor.swift; sourceTree = "<group>"; };
+		C5068CF826E21D47009E0A15 /* PopMoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopMoviesRouter.swift; sourceTree = "<group>"; };
 		C5CA828E26DE7F1E00500CCB /* Gigimovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gigimovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5CA829126DE7F1E00500CCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5CA829326DE7F1E00500CCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5CA829526DE7F1E00500CCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5CA829826DE7F1E00500CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5CA829A26DE7F1F00500CCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5CA829D26DE7F1F00500CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,6 +111,18 @@
 				88F24CBDB1EEB98323DB56BB /* Pods_GigimoviesTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5068CE326E21C97009E0A15 /* PopMoviesModule */ = {
+			isa = PBXGroup;
+			children = (
+				C5068CE426E21CDD009E0A15 /* PopMoviesModule.swift */,
+				C5068CE926E21CF7009E0A15 /* PopMoviesViewController.swift */,
+				C5068CEE26E21D05009E0A15 /* PopMoviesPresenter.swift */,
+				C5068CF326E21D1B009E0A15 /* PopMoviesInteractor.swift */,
+				C5068CF826E21D47009E0A15 /* PopMoviesRouter.swift */,
+			);
+			path = PopMoviesModule;
 			sourceTree = "<group>";
 		};
 		C5CA828526DE7F1E00500CCB = {
@@ -166,7 +188,8 @@
 		C5CA82C526DE7F6D00500CCB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C5CA829526DE7F1E00500CCB /* ViewController.swift */,
+				C5068CE326E21C97009E0A15 /* PopMoviesModule */,
+				C5068CDE26E21C84009E0A15 /* BaseProtocol.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -457,10 +480,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5CA829626DE7F1E00500CCB /* ViewController.swift in Sources */,
+				C5068CF926E21D47009E0A15 /* PopMoviesRouter.swift in Sources */,
+				C5068CEF26E21D05009E0A15 /* PopMoviesPresenter.swift in Sources */,
+				C5068CF426E21D1B009E0A15 /* PopMoviesInteractor.swift in Sources */,
 				C5F9250926E0FC76003D904C /* MovieEntity.swift in Sources */,
 				C5CA829226DE7F1E00500CCB /* AppDelegate.swift in Sources */,
+				C5068CDF26E21C84009E0A15 /* BaseProtocol.swift in Sources */,
+				C5068CE526E21CDD009E0A15 /* PopMoviesModule.swift in Sources */,
 				C5CA829426DE7F1E00500CCB /* SceneDelegate.swift in Sources */,
+				C5068CEA26E21CF7009E0A15 /* PopMoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
