@@ -14,6 +14,7 @@ protocol PopMoviesViewProtocol: UIViewController {
 class PopMoviesViewController: PopMoviesModule.View, PopMoviesViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.getPopMovies()
     }
     
     static func create() -> PopMoviesViewController {

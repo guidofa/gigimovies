@@ -254,6 +254,7 @@
 				C5CA828B26DE7F1E00500CCB /* Frameworks */,
 				C5CA828C26DE7F1E00500CCB /* Resources */,
 				1A2D6D6052CC9FEDE883185F /* [CP] Embed Pods Frameworks */,
+				C5068CFD26E2261B009E0A15 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -450,6 +451,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gigimovies-GigimoviesUITests/Pods-Gigimovies-GigimoviesUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C5068CFD26E2261B009E0A15 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		FAEFBDBBC8FF356112D7D8D8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

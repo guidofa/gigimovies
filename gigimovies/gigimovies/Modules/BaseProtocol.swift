@@ -10,4 +10,3 @@ import UIKit
 protocol BasePresenterProtocol: NSObject {
     var navigation: UINavigationController? { get }
 }
-
