@@ -9,6 +9,7 @@ import UIKit
 
 protocol PopMoviesViewProtocol: UIViewController {
     func getPopMoviesSuccess(movies: [MovieEntity])
+    func searchSuccess(movies: [MovieEntity])
 }
 
 class PopMoviesViewController: PopMoviesModule.View, PopMoviesViewProtocol {
@@ -61,6 +62,10 @@ extension PopMoviesViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension PopMoviesViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        presenter?.searchButtonClicked()
+        presenter?.searchButtonClicked(query: searchBar.text ?? "")
+    }
+    
+    func searchSuccess(movies: [MovieEntity]) {
+        moviesToShow = movies
     }
 }

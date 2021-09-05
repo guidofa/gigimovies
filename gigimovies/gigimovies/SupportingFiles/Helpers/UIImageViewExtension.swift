@@ -20,13 +20,6 @@ extension UIImageView {
                 .processor(processor),
                 .scaleFactor(UIScreen.main.scale),
                 .transition(.fade(1)),
-                .cacheOriginalImage]) { result in
-                    switch result {
-                    case .success(let value):
-                        print("Task done for: \(value.source.url?.absoluteString ?? "")")
-                    case .failure(let error):
-                        print("Job failed: \(error.localizedDescription)")
-            }
-        }
+                .cacheOriginalImage]) 
     }
 }

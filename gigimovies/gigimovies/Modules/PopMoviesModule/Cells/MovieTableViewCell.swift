@@ -13,7 +13,8 @@ class MovieTableViewCell: UITableViewCell {
     
     func configure(withMovie movie: MovieEntity) {
         movieTitle.text = movie.title
-        guard let url = URL(string: "https://image.tmdb.org/t/p/w500" + movie.poster_path) else { return }
+        guard let posterPath = movie.poster_path else { return }
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500" + posterPath) else { return }
         movieImageView.setmage(url: url)
     }
 }

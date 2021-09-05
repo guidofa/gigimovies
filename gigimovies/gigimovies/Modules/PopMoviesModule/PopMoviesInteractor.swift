@@ -9,53 +9,45 @@ import Foundation
 
 protocol PopMoviesInteractorProtocol: AnyObject {
     func getPopMovies()
-    func search()
+    func search(query: String)
+}
+
+enum EndpointType {
+    case popMovies
+    case search
 }
 
 class PopMoviesInteractor: PopMoviesModule.Interactor, PopMoviesInteractorProtocol {
-    
-// https://api.themoviedb.org/3 /search/movie?api_key=<<api_key>>&language=en-US&query=James&page=1&include_adult=false
-    func search() {
-        goToloadJson(url: getSearchUrl(query: "James"))
+    func search(query: String) {
+        goToloadJson(url: URLHelper.getSearchUrl(query: query), endpoint: .search)
     }
     
-    func getBaseUrl() -> String {
-        return "https://api.themoviedb.org/3"
-    }
-    
-    // TODO: Mejorar para no repetir codigo Helper
-    func getSearchUrl(query: String) -> String {
-        let url = getBaseUrl()+"/movie/popular?api_key="+getApiKey()+"&language=es&language=es&query="+query+"&page=1"
-        
-        return url
-    }
-    
-    func getApiKey() -> String {
-        return "ef22fd117d94f612763fe8531e33f256"
-    }
-        
     func getPopMovies() {
-        let url = getBaseUrl()+"/movie/popular?api_key="+getApiKey()+"&language=es"
-        goToloadJson(url: url)
+        goToloadJson(url: URLHelper.getPopMoviesURL(), endpoint: .popMovies)
     }
     
-    func goToloadJson(url: String) {
+    func goToloadJson(url: String, endpoint: EndpointType) {
         self.loadJson(fromURLString: url) { (result) in
             switch result {
             case .success(let data):
-                self.parse(jsonData: data)
+                self.parse(jsonData: data, endpoint: endpoint)
             case .failure(let error):
                 print(error)
             }
         }
     }
     
-    private func parse(jsonData: Data) {
+    private func parse(jsonData: Data, endpoint: EndpointType) {
         do {
             let decodedData = try JSONDecoder().decode(Results.self, from: jsonData)
-            presenter?.getPopMoviesSuccess(movies: decodedData.results)
+            switch endpoint {
+            case .popMovies:
+                presenter?.getPopMoviesSuccess(movies: decodedData.results)
+            case.search:
+                presenter?.searchSuccess(movies: decodedData.results)
+            }
         } catch {
-            print("fallanding")
+            print("No hay resultados")
         }
     }
     
