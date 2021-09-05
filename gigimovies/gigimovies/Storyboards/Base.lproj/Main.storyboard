@@ -45,14 +45,13 @@
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="PopMoviesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PopMoviesViewController" customModule="Gigimovies" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c1a-aC-Kbn">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="150" id="qDD-9u-du3" customClass="MovieTableViewCell" customModule="Gigimovies" customModuleProvider="target">
@@ -107,21 +106,33 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="9n1-Em-sZD"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ZFT-Cl-eu8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Y1l-Ia-YVi"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c1a-aC-Kbn" secondAttribute="bottom" id="LqF-wJ-S3B"/>
+                            <constraint firstItem="ZFT-Cl-eu8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ned-cv-K9i"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c1a-aC-Kbn" secondAttribute="trailing" id="OGk-re-ETp"/>
-                            <constraint firstItem="c1a-aC-Kbn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f6c-Bc-B22"/>
+                            <constraint firstItem="c1a-aC-Kbn" firstAttribute="top" secondItem="ZFT-Cl-eu8" secondAttribute="bottom" id="mpY-Ia-J67"/>
+                            <constraint firstItem="ZFT-Cl-eu8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nI7-XN-8rD"/>
+                            <constraint firstItem="ZFT-Cl-eu8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="skV-c2-qWf"/>
                             <constraint firstItem="c1a-aC-Kbn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u6c-ZP-bAr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Wbl-Id-ocn"/>
                     <connections>
+                        <outlet property="searchBar" destination="ZFT-Cl-eu8" id="iLE-PM-PMZ"/>
                         <outlet property="tableView" destination="c1a-aC-Kbn" id="H0H-gH-aeQ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1084.0579710144928" y="-370.3125"/>
         </scene>

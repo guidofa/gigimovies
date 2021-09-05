@@ -13,6 +13,7 @@ protocol PopMoviesViewProtocol: UIViewController {
 
 class PopMoviesViewController: PopMoviesModule.View, PopMoviesViewProtocol {
     @IBOutlet fileprivate weak var tableView: UITableView!
+    @IBOutlet fileprivate weak var searchBar: UISearchBar!
     fileprivate var moviesToShow: [MovieEntity] = [] {
         didSet {
             DispatchQueue.main.async {
@@ -55,5 +56,11 @@ extension PopMoviesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
+    }
+}
+
+extension PopMoviesViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        // Llamar al endpoint de search.x
     }
 }
