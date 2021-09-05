@@ -61,7 +61,6 @@ extension PopMoviesViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension PopMoviesViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        // Llamar al endpoint de search.x
-        print("Llamando a search")
+        presenter?.searchButtonClicked()
     }
 }

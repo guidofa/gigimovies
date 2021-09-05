@@ -9,19 +9,37 @@ import Foundation
 
 protocol PopMoviesInteractorProtocol: AnyObject {
     func getPopMovies()
+    func search()
 }
 
 class PopMoviesInteractor: PopMoviesModule.Interactor, PopMoviesInteractorProtocol {
+    
+// https://api.themoviedb.org/3 /search/movie?api_key=<<api_key>>&language=en-US&query=James&page=1&include_adult=false
+    func search() {
+        goToloadJson(url: getSearchUrl(query: "James"))
+    }
+    
     func getBaseUrl() -> String {
         return "https://api.themoviedb.org/3"
     }
     
-    func getToken() -> String {
+    // TODO: Mejorar para no repetir codigo Helper
+    func getSearchUrl(query: String) -> String {
+        let url = getBaseUrl()+"/movie/popular?api_key="+getApiKey()+"&language=es&language=es&query="+query+"&page=1"
+        
+        return url
+    }
+    
+    func getApiKey() -> String {
         return "ef22fd117d94f612763fe8531e33f256"
     }
         
     func getPopMovies() {
-        let url = getBaseUrl()+"/movie/popular?api_key="+getToken()+"&language=es"
+        let url = getBaseUrl()+"/movie/popular?api_key="+getApiKey()+"&language=es"
+        goToloadJson(url: url)
+    }
+    
+    func goToloadJson(url: String) {
         self.loadJson(fromURLString: url) { (result) in
             switch result {
             case .success(let data):
@@ -30,7 +48,6 @@ class PopMoviesInteractor: PopMoviesModule.Interactor, PopMoviesInteractorProtoc
                 print(error)
             }
         }
-        
     }
     
     private func parse(jsonData: Data) {

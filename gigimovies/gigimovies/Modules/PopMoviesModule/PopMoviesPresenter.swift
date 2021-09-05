@@ -10,6 +10,7 @@ import Foundation
 protocol PopMoviesPresenterProtocol: BasePresenterProtocol {
     func getPopMovies()
     func getPopMoviesSuccess(movies: [MovieEntity])
+    func searchButtonClicked()
 }
 
 class PopMoviesPresenter: PopMoviesModule.Presenter, PopMoviesPresenterProtocol {
@@ -19,5 +20,9 @@ class PopMoviesPresenter: PopMoviesModule.Presenter, PopMoviesPresenterProtocol 
     
     func getPopMovies() {
         interactor?.getPopMovies()
+    }
+    
+    func searchButtonClicked() {
+        interactor?.search()
     }
 }
