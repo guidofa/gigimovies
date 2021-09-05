@@ -112,6 +112,9 @@
                                     <constraint firstAttribute="height" constant="44" id="Y1l-Ia-YVi"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="GI8-Ev-8fx"/>
+                                </connections>
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
