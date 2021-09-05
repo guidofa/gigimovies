@@ -8,10 +8,19 @@
 import UIKit
 
 protocol PopMoviesViewProtocol: UIViewController {
-    
+    func getPopMoviesSuccess(movies: [MovieEntity])
 }
 
 class PopMoviesViewController: PopMoviesModule.View, PopMoviesViewProtocol {
+    @IBOutlet fileprivate weak var tableView: UITableView!
+    fileprivate var moviesToShow: [MovieEntity] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.getPopMovies()
@@ -24,5 +33,27 @@ class PopMoviesViewController: PopMoviesModule.View, PopMoviesViewProtocol {
             return popMoviesController
         }
         return PopMoviesViewController()
+    }
+    
+    func getPopMoviesSuccess(movies: [MovieEntity]) {
+        moviesToShow = movies
+    }
+}
+
+extension PopMoviesViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return moviesToShow.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell") as? MovieTableViewCell {
+            cell.configure(withMovie: moviesToShow[indexPath.row])
+            return cell
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
 }

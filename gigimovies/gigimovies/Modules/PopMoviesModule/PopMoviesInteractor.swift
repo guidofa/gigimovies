@@ -28,7 +28,6 @@ class PopMoviesInteractor: PopMoviesModule.Interactor, PopMoviesInteractorProtoc
                 self.parse(jsonData: data)
             case .failure(let error):
                 print(error)
-//                self.presenter?.getGnomeFailed(message: error.localizedDescription)
             }
         }
         
@@ -37,11 +36,8 @@ class PopMoviesInteractor: PopMoviesModule.Interactor, PopMoviesInteractorProtoc
     private func parse(jsonData: Data) {
         do {
             let decodedData = try JSONDecoder().decode(Results.self, from: jsonData)
-            print(decodedData.page)
-            print(decodedData.results[0])
-//            presenter?.getGnomesSuccess(data: decodedData.Results)
+            presenter?.getPopMoviesSuccess(movies: decodedData.results)
         } catch {
-//            presenter?.getGnomeFailed(message: "Oops, data not found")
             print("fallanding")
         }
     }

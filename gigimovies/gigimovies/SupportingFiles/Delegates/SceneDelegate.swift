@@ -23,10 +23,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         /// 3. Create a view hierarchy programmatically
-        let navigation = UINavigationController(rootViewController: PopMoviesModule.assemble())
+        let tabBar = UITabBarController()
+        let home = PopMoviesModule.assemble()
+        let casca = PopMoviesModule.assemble()
+        
+        home.tabBarItem = UITabBarItem(title: nil,
+                                    image: UIImage(systemName: "house",
+                                    withConfiguration: UIImage.SymbolConfiguration(weight: .heavy)), tag: 0)
+        casca.tabBarItem = UITabBarItem(title: nil,
+                                    image: UIImage(systemName: "star",
+                                    withConfiguration: UIImage.SymbolConfiguration(weight: .heavy)), tag: 0)
+        
+        tabBar.setViewControllers([home, casca], animated: false)
         
         /// 4. Set the root view controller of the window with your view controller
-        window.rootViewController = navigation
+        window.rootViewController = tabBar
         
         /// 5. Set the window and call makeKeyAndVisible()
         self.window = window
