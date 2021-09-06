@@ -62,7 +62,10 @@ extension PopMoviesViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension PopMoviesViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        presenter?.searchButtonClicked(query: searchBar.text ?? "")
+        if let stringToFilter = searchBar.text, !stringToFilter.isEmpty {
+            presenter?.searchButtonClicked(query: stringToFilter)
+        }
+        searchBar.resignFirstResponder()
     }
     
     func searchSuccess(movies: [MovieEntity]) {

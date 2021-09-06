@@ -25,16 +25,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         /// 3. Create a view hierarchy programmatically
         let tabBar = UITabBarController()
         let home = PopMoviesModule.assemble()
-        let casca = PopMoviesModule.assemble()
+        let fav = FavMoviesModule.assemble()
         
         home.tabBarItem = UITabBarItem(title: nil,
                                     image: UIImage(systemName: "house",
                                     withConfiguration: UIImage.SymbolConfiguration(weight: .heavy)), tag: 0)
-        casca.tabBarItem = UITabBarItem(title: nil,
+        fav.tabBarItem = UITabBarItem(title: nil,
                                     image: UIImage(systemName: "star",
                                     withConfiguration: UIImage.SymbolConfiguration(weight: .heavy)), tag: 0)
         
-        tabBar.setViewControllers([home, casca], animated: false)
+        tabBar.setViewControllers([home, fav], animated: false)
         
         /// 4. Set the root view controller of the window with your view controller
         window.rootViewController = tabBar
