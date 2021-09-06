@@ -20,13 +20,13 @@ Creo que lo ideal para el manejo de las peliculas favoritas es a hacerlo a trav�
 
 Otra manera posible si no se tiene acceso al backend como en este caso y se requiere que las peliculas persistan es hacerlo mediante base de datos guardando todo de forma local, se me ocurre para ese caso el framework Realm o algo mas nativo como CoreData.
 
-La manera que eleji yo para este caso es el de hacer un Manager que sigue un patron singleton y guardar el array de peliculas favoritas ahi. Claro está que cada vez que el usuario mate la app las peliculas favoritas seran eliminadas. 
+La manera que elegí yo para este caso es el de hacer un FavoritesManager que sigue un patron singleton y guardar el array de peliculas favoritas ahí. Claro está que cada vez que el usuario cierre la app las peliculas favoritas serán eliminadas. 
 
 # Librerias
 
 Como gestor de librerias utilicé cocoapods y mediante el mismo instalé dos dependencias Kingfisher: Utilizado para optimizar el manejo de imagenes https://github.com/onevcat/Kingfisher y
 
-Swiftlint: que es una herramienta que utilizo para que mi codigo cumpla con reglas de sintaxis para un mejor orden y un código mas limpio https://github.com/realm/SwiftLint
+Swiftlint: que es una herramienta que utilizo para que mi código cumpla con reglas de sintaxis para un mejor orden y un código mas limpio https://github.com/realm/SwiftLint
 
 # Diseño
 
