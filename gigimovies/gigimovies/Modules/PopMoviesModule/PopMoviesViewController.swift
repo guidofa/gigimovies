@@ -58,6 +58,10 @@ extension PopMoviesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        FavoritesManager.shared.addFav(movie: moviesToShow[indexPath.row])
+    }
 }
 
 extension PopMoviesViewController: UISearchBarDelegate {

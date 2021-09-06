@@ -8,9 +8,11 @@
 import Foundation
 
 protocol FavMoviesPresenterProtocol: BasePresenterProtocol {
-
+    func getFavMovies()
 }
 
 class FavMoviesPresenter: FavMoviesModule.Presenter, FavMoviesPresenterProtocol {
-    
+    func getFavMovies() {
+        view?.getFavMoviesSuccess(favMovies: FavoritesManager.shared.getFavs())
+    }
 }
